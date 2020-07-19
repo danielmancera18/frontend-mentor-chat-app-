@@ -1,0 +1,44 @@
+/*-----------colors*/
+$Pale_Violet: hsl(276, 100%, 81%);
+$Moderate_Violet: hsl(276, 55%, 52%);
+$Desaturated_Dark: hsl(271, 15%, 43%);
+$Grayish_Blue: hsl(206, 6%, 79%);
+$Very_Dark_Desaturated_Violet: hsl(271, 36%, 24%);
+$Dark_Grayish_Violet: hsl(270, 4%, 53%);
+/*---------gradients*/
+$Light_Magenta: hsl(293, 67%, 52%);
+$Light_Violet: hsl(264, 74%, 53%);
+/*-------------secundary*/
+$White: hsl(0, 0%, 100%);
+$Light_Grayish_Violet: hsl(300, 77%, 95%);
+
+$Very_Light_Magenta: hsl(289, 100%, 72%);
+
+
+@mixin chat($color,$background-color1, $background-color2) {
+    max-width: 150px;
+    font-size: 9px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-weight: 500;
+    background-image: linear-gradient(to left, $background-color1, $background-color2);
+    color: $color;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+  height: 940px;
+  background-image: url('../images/morado1.JPG'),url('../images/gris.JPG');
+  background-repeat: no-repeat;
+  background-size: 320px 480px,320px 500px ;
+  background-position-x: -130px,250px;
+  background-position-y: top,bottom;
+}

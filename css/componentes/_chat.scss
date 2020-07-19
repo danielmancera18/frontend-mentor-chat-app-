@@ -1,0 +1,81 @@
+.chat{
+  width: 100%;
+  padding: 0 10px;
+  height: 410px;
+  p{
+      margin: 0;
+      line-height:1.3em;
+    }
+  h3{
+      margin: 0;
+    }
+  .my-chat{
+    @include chat($Very_Dark_Desaturated_Violet, $Pale_Violet,$Pale_Violet);
+    border-radius: 8px 8px 8px 0px;
+  }
+  .span__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .user--chat{
+    display: flex;
+    justify-content: flex-end;
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  .user--text{
+    @include chat($Very_Dark_Desaturated_Violet, $White,$White);
+    border-radius: 8px 8px 0px 8px;
+    box-shadow: 0px 2px 3px $Grayish_Blue;
+  }
+  .prices__container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 35px;
+      @include chat($White,$Light_Violet, $Light_Magenta);
+      max-width: 160px;
+      border-radius: 8px 8px 8px 0px;
+      span{
+        display: flex;
+        align-items: center;
+        opacity: .5;
+      }
+      img{
+        width: 18px;
+        height: 18px;
+        margin: 0 3px 0 0;
+      }
+      h3{
+        margin-right: 3px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+      }
+  }
+  .text-input{
+    div{
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      margin: 15px 0;
+      padding: 5px 10px;
+      background-color: $White;
+      border-radius: 50em;
+      font-size: 12px;
+      box-shadow: 0px 2px 3px $Grayish_Blue;
+    }
+    img{
+      width: 25px;
+      height: 25px;
+    }
+    p{
+      opacity: 0.6;
+    }
+  }
+}

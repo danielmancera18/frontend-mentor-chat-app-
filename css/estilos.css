@@ -1,0 +1,268 @@
+/*-----------colors*/
+/*---------gradients*/
+/*-------------secundary*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 940px;
+  background-image: url("../images/morado1.JPG"), url("../images/gris.JPG");
+  background-repeat: no-repeat;
+  background-size: 320px 480px, 320px 500px;
+  background-position-x: -130px, 250px;
+  background-position-y: top, bottom;
+}
+
+.cellphone {
+  width: 260px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 5px 10px 12px 10px;
+  border-radius: 40px;
+  position: relative;
+  top: 5em;
+  background-color: white;
+  box-shadow: 4px 8px 30px #87828c;
+}
+.cellphone .cellphone__microphone {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 25px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: white;
+}
+.cellphone .chat-container {
+  height: 98%;
+  margin-top: 5px;
+  border-radius: 30px;
+  background-color: #e9e4e4;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px 30px 5px 5px;
+  padding: 35px 8px 10px;
+  background-image: linear-gradient(to right, #752ee0 45%, #c333d7);
+  box-shadow: 0px 3px 3px #87828c;
+  margin-bottom: 10px;
+}
+.user__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  color: white;
+}
+.user__div--icon {
+  width: 20px;
+  height: 20px;
+}
+.user__div--image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50em;
+  margin-right: 5px;
+}
+.user__div h3 {
+  margin: 0 0 5px 0;
+  font-size: 10px;
+  font-weight: 500;
+}
+.user__div p {
+  margin: 0;
+  font-size: 8px;
+  opacity: 0.5;
+}
+
+.chat {
+  width: 100%;
+  padding: 0 10px;
+  height: 410px;
+}
+.chat p {
+  margin: 0;
+  line-height: 1.3em;
+}
+.chat h3 {
+  margin: 0;
+}
+.chat .my-chat {
+  max-width: 150px;
+  font-size: 9px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #d89eff, #d89eff);
+  color: #3e2753;
+  border-radius: 8px 8px 8px 0px;
+}
+.chat .span__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.chat .user--chat {
+  display: flex;
+  justify-content: flex-end;
+}
+.chat .user--chat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.chat .user--text {
+  max-width: 150px;
+  font-size: 9px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, white, white);
+  color: #3e2753;
+  border-radius: 8px 8px 0px 8px;
+  box-shadow: 0px 2px 3px #c6cacd;
+}
+.chat .prices__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  max-width: 150px;
+  font-size: 9px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-weight: 500;
+  background-image: linear-gradient(to left, #752ee0, #c333d7);
+  color: white;
+  max-width: 160px;
+  border-radius: 8px 8px 8px 0px;
+}
+.chat .prices__container span {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+.chat .prices__container img {
+  width: 18px;
+  height: 18px;
+  margin: 0 3px 0 0;
+}
+.chat .prices__container h3 {
+  margin-right: 3px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.chat .text-input div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 50em;
+  font-size: 12px;
+  box-shadow: 0px 2px 3px #c6cacd;
+}
+.chat .text-input img {
+  width: 25px;
+  height: 25px;
+}
+.chat .text-input p {
+  opacity: 0.6;
+}
+
+.text {
+  margin-top: 9em;
+  text-align: center;
+  padding: 0 40px;
+}
+.text h1 {
+  font-size: 35px;
+  color: #3e2753;
+}
+.text p {
+  color: #87828c;
+  font-size: 0.9em;
+  padding: 0 9px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-position-x: left, right;
+  }
+  .main .cellphone {
+    top: 30px;
+    margin-right: 50px;
+  }
+  .main .text {
+    margin-top: 0;
+    text-align: left;
+    width: 50%;
+    padding: 0 80px 0 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    padding: 130px;
+    background-size: 35% 80%, 35% 80%;
+  }
+
+  .cellphone {
+    margin-right: 300px;
+  }
+
+  .text {
+    margin-left: 50px;
+    padding: 0px;
+  }
+}
+.fadeIn {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn2 {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
